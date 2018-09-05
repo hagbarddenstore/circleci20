@@ -4,4 +4,7 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: docker build .
+      - run:
+          command: |
+            cd src/
+            docker build -f ../Dockerfile .
