@@ -7,4 +7,4 @@ jobs:
       - run:
           command: |
             cd src/
-            docker build -f ../Dockerfile .
+            docker build  .
